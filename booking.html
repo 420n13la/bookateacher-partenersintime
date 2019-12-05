@@ -6,30 +6,116 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href="https://fonts.googleapis.com/css?family=Staatliches&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/bootstrap.css">
+	<link rel="stylesheet" href="css/styles.css">
 
 <style>
 /* STYLE GOES HERE IF NEEDED */
+
+.jumbotron{
+background: orange;
+}
 
 </style>
 
 </head>
 <body>
 
-  <h1>Book a Teacher</h1>
-  <p>User Experience Web Interface Design</p> 
+<div class="jumbotron text-center text-light">
+  <h1 class="display-4">Book a Teacher</h1>
+  <p class="lead">User Experience Web Interface Design</p> 
+  </div>
   
   <nav>
   <!-- NAVIGATION GOES HERE -->
+   
+   <ul class="nav nav-tabs">
+  
+  <li class="nav-item">
+  <a class="nav-link" href="index.html">Teachers</a> &nbsp;
+  </li>
+  
+  <li class="nav-item">
+  <a class="nav-link active" href="booking.html">Booking</a> &nbsp;
+  </li>
+  
+  <li class="nav-item">
+  <a class="nav-link disabled" href="">About</a> 
+  </li>
+  
+  </ul>
   
   </nav>
 
   <div class="container">
   <!-- FORM GOES HERE -->
+<form>
+<div class="row">
+
+<div class="col-sm-6">
+<label for="name">Name</label><br>
+<input type="text" id="username" required>
+
+<br>
+
+<label for="email">Email</label><br>
+<input type="text" id="email" placeholder="example@champlaincollege.com" pattern="*@champlaincollege.com" required>
+<br>
+
+<label for="phone">Phone</label><br>
+<input type="tel" id="phone" name="phone" placeholder="123-456-7890" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
+<br>
+
+<label for="topics">Topics to discuss</label><br>
+<textarea></textarea>
+<br>
+</div>
+
+<div class="col-sm-6">
+
+<label for="level">Level</label><br>
+<select>
+<option>First-Year(Semester 1 to 2)</option>
+<option>Second-Year(Semester 3 to 4)</option>
+<option>Third-Year(Semester 5 to 6)</option>
+</select>
+<br>
+
+<label for="timeday">Time of Day</label><br>
+<input type="radio" id="day" name="timeday">
+<label for="day">Day</label>
+<br>
+
+<input type="radio" id="evening" name="timeday">
+<label for="timeday">Evening</label>
+<br>
+
+<label for="date">Date</label><br>
+<input type="text" id="date">
+<br>
+
+<label for="invite-teachers">Invite Teachers</label><br>
+
+<input type="radio" id="Jennifer" name="teachinv">
+<label for="teachinv">Jennifer</label><br>
+
+<input type="radio" id="Reza" name="teachinv">
+<label for="teachinv">Reza</label><br>
+
+<input type="radio" id="Alicia" name="teachinv">
+<label for="teachinv">Alicia</label><br>
+
+</div>
+
+<input type="submit" id="Book">
+
+</div>
+
+</form>
 
   </div>
   
-<footer>
-    <div>Made with Love in Saint-Lambert</div>
+<footer class="bg-dark">
+    <div class="text-light text-center p-4">Made with Love in Saint-Lambert</div>
 </footer>  
 
 </body>

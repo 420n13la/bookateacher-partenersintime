@@ -1,0 +1,13 @@
+
+
+.jumbotron h1{
+  font-family: 'Staatliches', cursive;
+  font-size: 4em;
+}
+
+main{
+	width: 50%;
+	justify-content: center;
+	margin: auto;
+}
+

@@ -6,37 +6,85 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href="https://fonts.googleapis.com/css?family=Staatliches&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/bootstrap.css">
-
+  <link rel="stylesheet" href="css/styles.css">
+  
 <style>
+
 .jumbotron{
-    background: #38b6ff !important;
+ background: #38b6ff !important;
 }
 
-.jumbotron h1{
-  font-family: 'Staatliches', cursive;
-  font-size: 4em;
-}
 </style>
 
 </head>
 <body>
 
-  <h1>Book a Teacher</h1>
-  <p>User Experience Web Interface Design</p> 
-  
+<div class="jumbotron text-center text-light">
+  <h1 class="display-4">Book a Teacher</h1>
+  <p class="lead">User Experience Web Interface Design</p> 
+</div>
+
   <nav>
   <!-- NAVIGATION GOES HERE -->
-
+  <ul class="nav nav-tabs">
+  
+  <li class="nav-item">
+  <a class="nav-link active" href="index.html">Teachers</a> &nbsp;
+  </li>
+  
+  <li class="nav-item">
+  <a class="nav-link" href="booking.html">Booking</a> &nbsp;
+  </li>
+  
+  <li class="nav-item">
+  <a class="nav-link disabled" href="">About</a>
+  </li>
+  
+  </ul>
   </nav>
 
-  <main>  
+
+
+  
+  <main class="px-2">  
   <!-- CONTENT GOES HERE -->
+  
+  <h2 class="text-primary">UXWID Teachers</h2>
+  <p class="text-secondary">Jennifer, Reza and Alicia are the three teachers of the course User Experience and Web Interface design. 
+  They decided to join forces and share their insight with all students. 
+  They are available at different times in the day and evening to offer students more options to meet a teacher.</p>
+  
+  <div class="row">
+  
+  <div class="col-4">
+  <img src="images/jennifer.png" class="rounded-circle img-fluid">
+  <h2>Jennifer</h2>
+  <p class="mb-4">Responsiveness is one of the most important criteria of a website. Reza can teach you the steps to build great responsive websites with ease and clarity.
+Reza's interests include camping and robotics.</p>
+<button class="btn-lg bg-secondary text-center text-light btn-block mb-4" href="">Email Jennifer</a>
+  </div>
+  
+  <div class="col-4">
+  <img src="images/reza.png" class="rounded-circle img-fluid">
+  <h2>Reza</h2>
+  <p class="mb-4">Responsiveness is one of the most important criteria of a website. Reza can teach you the steps to build great responsive websites with ease and clarity.
+Reza's interests include camping and robotics.</p>
+<button class="btn-lg bg-secondary text-center text-light btn-block mb-4" href="">Email Reza</a>
+  </div>
+  
+  <div class="col-4">
+  <img src="images/alicia.png" class="rounded-circle img-fluid">
+  <h2>Alicia</h2>
+  <p class="mb-4">Meet Alicia to discuss prototyping websites following the latest design principles and best practices for meaning and great user emotional experience.
+Alicia's interests include puzzles and climbing.</p>
+<button class="btn-lg bg-secondary text-center text-light btn-block mb-4" href="">Email Alicia</a>
+  </div>
 
   </main>
   
-  <footer>
-    <div>Made with Love in Saint-Lambert</div>
-  </footer>  
+  <footer class="bg-dark">
+    <div class="text-light text-center p-4">Made with Love in Saint-Lambert</div>
+  </footer>
 
 </body>
 </html>
